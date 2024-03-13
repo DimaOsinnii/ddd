@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": [
+      "esnext"
+    ],
+    "types": [
+      "@types/node"
+    ],
+    "module": "nodenext",
+    "moduleResolution": "nodenext"
+  }
+}

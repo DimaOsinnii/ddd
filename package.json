@@ -1,0 +1,31 @@
+{
+    "name": "ddd",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "server:dev": "pnpm -F @app/server dev",
+        "server:build": "pnpm -F @app/server build",
+        "server:start": "pnpm -F @app/server start",
+        "migrate": "pnpm -F @app/server knex migrate:latest",
+        "migrate:make": "pnpm -F @app/server knex migrate:make",
+        "migrate:up": "pnpm -F @app/server knex migrate:up",
+        "migrate:undo": "pnpm -F @app/server knex migrate:down",
+        "migrate:list": "pnpm -F @app/server knex migrate:status",
+        "migrate:rollback": "pnpm -F @app/server knex migrate:rollback",
+        "seed:make": "pnpm -F @app/server knex seed:make",
+        "seed:run": "pnpm -F @app/server knex seed:run"
+    },
+    "keywords": [],
+    "author": "Dmytro Osinnii",
+    "license": "ISC",
+    "devDependencies": {
+        "@app/client": "workspace:^",
+        "@app/server": "workspace:^",
+        "@shared/eslint-config": "workspace:^",
+        "@shared/typescript-config": "workspace:^",
+        "@types/node": "^20.11.19",
+        "eslint": "^8.57.0",
+        "prettier": "^3.2.5",
+        "typescript": "^5.3.3"
+    }
+}

@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  postgres:
+    container_name: node-fastify-db
+    image: postgres:latest
+    environment:
+      POSTGRES_PASSWORD: 'node-fastify'
+      POSTGRES_USER: 'node-fastify'
+      POSTGRES_DB: 'node-fastify'
+      PG_DATA: /var/lib/postgresql/data
+    ports:
+      - '5433:5432'
+    volumes:
+      - ./volumes/postgresql/data:/var/lib/postgresql/data
