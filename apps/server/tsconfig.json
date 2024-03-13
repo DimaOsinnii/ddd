@@ -1,14 +1,10 @@
 {
-  "extends": "./config/tsconfig.paths.json",
-  "ts-node": {
-    "esm": true
-  },
-  "compilerOptions": {
-    "noEmit": true
-  },
-  "include": [
-    "src",
-    "config",
-    "eslint.config.js",
-  ]
+    "extends": "./config/tsconfig.paths.json",
+    "ts-node": {
+        "esm": true
+    },
+    "compilerOptions": {
+        "noEmit": true
+    },
+    "include": ["src", "config"]
 }
