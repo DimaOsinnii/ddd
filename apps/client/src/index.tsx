@@ -13,4 +13,6 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
     );
 }
 
+console.log('asd');
+
 render(() => <App />, root!);
