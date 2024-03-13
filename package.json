@@ -18,7 +18,8 @@
         "migrate:list": "pnpm -F @app/server knex migrate:status",
         "migrate:rollback": "pnpm -F @app/server knex migrate:rollback",
         "seed:make": "pnpm -F @app/server knex seed:make",
-        "seed:run": "pnpm -F @app/server knex seed:run"
+        "seed:run": "pnpm -F @app/server knex seed:run",
+        "pre-commit": "pnpm lint-staged"
     },
     "devDependencies": {
         "@eslint/js": "^8.56.0",
@@ -31,6 +32,8 @@
         "eslint-plugin-import": "^2.29.1",
         "eslint-plugin-simple-import-sort": "^12.0.0",
         "globals": "^14.0.0",
+        "husky": "^9.0.11",
+        "lint-staged": "^15.2.2",
         "prettier": "^3.2.5",
         "typescript": "^5.3.3",
         "typescript-eslint": "^7.2.0"
