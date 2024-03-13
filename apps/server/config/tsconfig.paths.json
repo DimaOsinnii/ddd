@@ -1,0 +1,15 @@
+{
+    "extends": "@shared/typescript-config/node.json",
+    "compilerOptions": {
+        "baseUrl": "../",
+        "paths": {
+            "@domain/*": ["./src/domain/*"],
+            "@application/*": ["./src/application/*"],
+            "@infrastructure/*": ["./src/infrastructure/*"],
+            "@interfaces/*": ["./src/interfaces/*"],
+            "@utils/*": ["./src/utils/*"],
+            "@ioc/*": ["./src/ioc/*"]
+        }
+    },
+    "exclude": ["../node_modules"]
+}
