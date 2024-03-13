@@ -10,7 +10,6 @@
         "serve": "vite preview"
     },
     "devDependencies": {
-        "@shared/eslint-config": "workspace:^",
         "@shared/typescript-config": "workspace:^",
         "eslint": "^8.57.0",
         "solid-devtools": "^0.29.2",
