@@ -1,16 +1,18 @@
 {
-  "$schema": "https://json.schemastore.org/tsconfig",
-  "compilerOptions": {
-    "resolveJsonModule": true,
-    "allowJs": true,
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "strict": true,
-    "noUncheckedIndexedAccess": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "allowUnusedLabels": false,
-    "allowUnreachableCode": false,
-    "skipLibCheck": true
-  }
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "compilerOptions": {
+        "resolveJsonModule": true,
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "strict": true,
+        "noUncheckedIndexedAccess": true,
+        "noImplicitAny": true,
+        "isolatedModules": true,
+        "strictNullChecks": true,
+        "allowUnusedLabels": false,
+        "allowUnreachableCode": false,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true
+    }
 }

@@ -1,5 +1,6 @@
-import type { Password } from '@domain/users/types';
 import crypto from 'node:crypto';
+
+import type { Password } from '@domain/users/types';
 
 export function createUserPassword(value: string, hashed = false): Password {
     return {

@@ -1,6 +1,7 @@
-import type { BaseDataAccess } from './BaseDataAccess';
 import type { Password, User } from '@domain/users';
 import type { Nullable } from '@utils/types';
+
+import type { BaseDataAccess } from './BaseDataAccess';
 
 interface CreateUserData extends Pick<User, 'username' | 'email' | 'isEmailVerified'> {
     password: Password['value'];

@@ -2,7 +2,12 @@
     "name": "ddd",
     "version": "1.0.0",
     "description": "",
+    "author": "Dmytro Osinnii",
+    "license": "ISC",
+    "type": "module",
     "scripts": {
+        "client:dev": "pnpm -F @app/client dev",
+        "client:build": "pnpm -F @app/client build",
         "server:dev": "pnpm -F @app/server dev",
         "server:build": "pnpm -F @app/server build",
         "server:start": "pnpm -F @app/server start",
@@ -15,17 +20,19 @@
         "seed:make": "pnpm -F @app/server knex seed:make",
         "seed:run": "pnpm -F @app/server knex seed:run"
     },
-    "keywords": [],
-    "author": "Dmytro Osinnii",
-    "license": "ISC",
     "devDependencies": {
-        "@app/client": "workspace:^",
-        "@app/server": "workspace:^",
-        "@shared/eslint-config": "workspace:^",
+        "@eslint/js": "^8.56.0",
         "@shared/typescript-config": "workspace:^",
+        "@types/eslint": "^8.56.5",
+        "@types/eslint-config-prettier": "^6.11.3",
         "@types/node": "^20.11.19",
         "eslint": "^8.57.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-import": "^2.29.1",
+        "eslint-plugin-simple-import-sort": "^12.0.0",
+        "globals": "^14.0.0",
         "prettier": "^3.2.5",
-        "typescript": "^5.3.3"
+        "typescript": "^5.3.3",
+        "typescript-eslint": "^7.2.0"
     }
 }
