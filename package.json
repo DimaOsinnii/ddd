@@ -8,6 +8,7 @@
     "scripts": {
         "client:dev": "pnpm -F @app/client dev",
         "client:build": "pnpm -F @app/client build",
+        "client:start": "pnpm -F @app/client serve",
         "server:dev": "pnpm -F @app/server dev",
         "server:build": "pnpm -F @app/server build",
         "server:start": "pnpm -F @app/server start",

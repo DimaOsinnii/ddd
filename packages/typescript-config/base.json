@@ -4,6 +4,8 @@
         "resolveJsonModule": true,
         "allowJs": true,
         "allowSyntheticDefaultImports": true,
+        "allowImportingTsExtensions": true,
+        "useDefineForClassFields": true,
         "esModuleInterop": true,
         "strict": true,
         "noUncheckedIndexedAccess": true,
@@ -13,6 +15,9 @@
         "allowUnusedLabels": false,
         "allowUnreachableCode": false,
         "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true
+        "forceConsistentCasingInFileNames": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true
     }
 }
