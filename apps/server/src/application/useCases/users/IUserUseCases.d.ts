@@ -1,5 +1,5 @@
-import type { UserDataAccess } from '@domain/dataAccess/UserDataAccess';
 import type { CreateUserDTO, UserDTO } from '@application/dto/user';
+import type { UserDataAccess } from '@domain/dataAccess/UserDataAccess';
 
 export interface CreateUserUseCase {
     (userDataAccess: UserDataAccess): (dto: CreateUserDTO) => Promise<UserDTO>;

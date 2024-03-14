@@ -1,5 +1,5 @@
-import type { UserDataAccess } from '@domain/dataAccess/UserDataAccess';
 import type { LoginDTO, RegisterDTO } from '@application/dto/auth';
+import type { UserDataAccess } from '@domain/dataAccess/UserDataAccess';
 
 export interface RegisterUseCaseFactory {
     (userDataAccess: UserDataAccess): (dto: RegisterDTO) => Promise<unknown>;

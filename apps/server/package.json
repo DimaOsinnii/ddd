@@ -3,8 +3,8 @@
     "version": "1.0.0",
     "description": "",
     "scripts": {
-        "clean": "rimraf app",
-        "build": "pnpm clean && pnpm migrate && tsc -p ./configs/tsconfig.build.json",
+        "clean": "pnpm -r exec rm -rf dist",
+        "build": "pnpm clean && pnpm migrate && tsc -p ./config/tsconfig.build.json",
         "start": "node -r ./config/tsconfig-paths-bootstrap.cjs ./app/main.js",
         "dev": "nodemon --config ./config/nodemon.json",
         "knex": "ts-node -r tsconfig-paths/register src/infrastructure/database/knex/cli.ts",
@@ -23,7 +23,6 @@
         "@types/pg": "^8.11.2",
         "json-schema-to-ts": "^3.0.0",
         "nodemon": "^3.1.0",
-        "rimraf": "^5.0.5",
         "ts-node": "^10.9.2",
         "typescript": "^5.3.3"
     },

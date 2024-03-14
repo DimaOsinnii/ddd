@@ -1,9 +1,8 @@
-import type { CreateUserUseCase } from '@application/useCases/users/IUserUseCases';
-
-import { hashPassword } from '@domain/users';
 import { toUserDTO } from '@application/dto/user';
-import { UniqueConstraintError } from '../../../utils/errors/infrastructure/postgres';
-import { ValidationError } from '../../../utils/errors/application';
+import type { CreateUserUseCase } from '@application/useCases/users/IUserUseCases';
+import { hashPassword } from '@domain/users';
+import { ValidationError } from '@utils/errors/application';
+import { UniqueConstraintError } from '@utils/errors/infrastructure/postgres';
 
 const makeCreateUser: CreateUserUseCase = (userDataAccess) => async (dto) => {
     const { username, email, password } = dto;

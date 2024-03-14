@@ -1,7 +1,7 @@
 import type { IAuthUseCasesFactory } from '@application/useCases/auth/IAuthUseCases';
 
-import makeRegister from './register';
 import makeLogin from './login';
+import makeRegister from './register';
 
 export const makeAuthUseCases: IAuthUseCasesFactory = (userDataAccess) => ({
     registerUseCase: makeRegister(userDataAccess),

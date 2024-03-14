@@ -1,8 +1,5 @@
 {
     "extends": "./config/tsconfig.paths.json",
-    "ts-node": {
-        "esm": true
-    },
     "compilerOptions": {
         "noEmit": true
     },
