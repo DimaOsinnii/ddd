@@ -2,9 +2,8 @@
     "extends": "@shared/typescript-config/browser.json",
     "compilerOptions": {
         "jsx": "preserve",
-        "jsxImportSource": "solid-js",
-        "types": ["vite/client"],
-        "noEmit": true
+        "jsxImportSource": "solid-js"
     },
-    "include": ["src", "vite.config.ts"]
+    "include": ["src"],
+    "references": [{ "path": "./tsconfig.node.json" }]
 }
